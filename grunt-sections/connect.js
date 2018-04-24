@@ -76,6 +76,7 @@ module.exports = function (grunt, options) {
             mountFolder(connect, 'test'),
             mountFolder(connect, 'app/test'),
             mountFolder(connect, 'app'),
+            mountFolder(connect, 'node_modules'),
             proxyFolder('/wcservices/', '<%= yeoman.api %>'.replace('_api', 'wcservices')),
             proxyFolder('/_api/', '<%= yeoman.api %>'),
             proxyFolder('/_partials/', '<%= yeoman.partials %>'),
